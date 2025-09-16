@@ -5,7 +5,10 @@
       "label": "Run Home Assistant Core",
       "type": "shell",
       "command": "${command:python.interpreterPath} -m homeassistant -c ./config",
-      "group": "test",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
       "presentation": {
         "reveal": "always",
         "panel": "new"
